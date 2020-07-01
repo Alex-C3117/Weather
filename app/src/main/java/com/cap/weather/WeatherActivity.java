@@ -34,20 +34,35 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
+
     public DrawerLayout drawerLayout;
+
     public SwipeRefreshLayout swipeRefresh;
+
     private ScrollView weatherLayout;
+
     private Button navButton;
+
     private TextView titleCity;
+
     private TextView titleUpdateTime;
+
     private TextView degreeText;
+
     private TextView weatherInfoText;
+
     private LinearLayout forecastLayout;
+
     private TextView aqiText;
+
     private TextView pm25Text;
+
     private TextView comfortText;
+
     private TextView carWashText;
+
     private TextView sportText;
+
     private ImageView bingPicImg;
 
     @Override
@@ -218,4 +233,5 @@ public class WeatherActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AutoUpdateService.class);
         startService(intent);
     }
+
 }
